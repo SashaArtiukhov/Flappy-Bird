@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Flappy_Bird</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="NewFolder\background.png" />
+    <None Remove="NewFolder\bird.png" />
+    <None Remove="NewFolder\pipebot.png" />
+    <None Remove="NewFolder\pipetop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="NewFolder\background.png" />
+    <Resource Include="NewFolder\bird.png" />
+    <Resource Include="NewFolder\pipebot.png" />
+    <Resource Include="NewFolder\pipetop.png" />
+  </ItemGroup>
+
+</Project>

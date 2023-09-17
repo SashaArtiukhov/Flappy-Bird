@@ -1,0 +1,45 @@
+﻿<Window x:Class="Flappy_Bird.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flappy_Bird"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="510" Width="900" ResizeMode="NoResize" FocusManager.FocusedElement="{Binding ElementName=Scene}" KeyDown="Scene_KeyDown" KeyUp="Scene_KeyUp">
+    <Canvas Name="Scene" Focusable="True">
+        <Image Source="NewFolder/background.png" Stretch="Fill" StretchDirection="Both" RenderTransformOrigin="0.5,0.5" Width="898" Height="498" Canvas.Top="-1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.276"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.81"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Name="flappyBird" Source="NewFolder/bird.png" Stretch="Fill" Height="43" Canvas.Top="216" Width="56" Canvas.Left="55"/>
+
+        <Label Name="ScoreLbl" FontSize="20" Content="Score: 0" Foreground="White" FontFamily="Roboto" FontWeight="Bold" Panel.ZIndex="1"/>
+
+        <Image Height="172" Width="75" Source="NewFolder/pipebot.png" Canvas.Left="273" Canvas.Top="321" Tag="pipe1"/>
+        <Image Height="171" Width="49" Source="NewFolder/pipetop.png" Canvas.Left="285" Canvas.Top="-7" Tag="pipe1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.079"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Height="90" Width="59" Source="NewFolder/pipebot.png" Canvas.Left="782" Canvas.Top="406" Tag="pipe3"/>
+        <Image Height="212" Width="55" Source="NewFolder/pipetop.png" Canvas.Left="793" Canvas.Top="-80" Tag="pipe3" RenderTransformOrigin="0.526,0.224"/>
+
+        <Image Height="107" Width="75" Source="NewFolder/pipebot.png" Canvas.Left="532" Canvas.Top="389" Tag="pipe2" RenderTransformOrigin="-0.112,0.561"/>
+        <Image Height="104" Width="273" Source="NewFolder/pipetop.png" Canvas.Left="428" Tag="pipe2" Canvas.Top="2"/>
+    </Canvas>
+
+
+
+</Window>
